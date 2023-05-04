@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048</title>
+  <script src="https://cdn.jsdelivr.net/npm/hammerjs"></script>
+  <link rel="stylesheet" href="2048.css">
+  <script src="2048.js"></script>
+</head>
+
+<body>
+  <div>
+    <a href="home.html">
+      <button class="overlay__btn2"
+        style="border-radius: 1.0rem; position: absolute; top: 50px; background-color:white; color: black; width: 15rem; cursor: pointer;">
+        <span> Back to vedant's space<<< </span>
+      </button>
+    </a>
+  </div>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="score-container">0</div>
+    </div>
+    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two
+      tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+  </div>
+
+</body>
+
+</html>
