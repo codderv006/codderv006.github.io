@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <title>Freezing time...</title>
+  <link rel="stylesheet" href="loading.css">
+  <script src="loading.js"></script>
+</head>
+
+<body>
+  <div style="text-align:center" id="loader">
+    <canvas id="canvasOne" width="900" height="550">
+      Your browser does not support HTML5 canvas.
+    </canvas>
+  </div>
+  <style>
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: opacity 1s ease-out;
+    }
+
+    #loader img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+
+
+  <script>
+    setTimeout(function () {
+      document.getElementById("loader").style.opacity = "0";
+      setTimeout(function () {
+        window.location.href = "home.html";
+      }, 1000);
+    }, 5000);
+  </script>
+
+
+</body>
+
+</html>
